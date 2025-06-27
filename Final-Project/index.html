@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivia Portal</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Trivia Portal</h1>
+      <p>Welcome to a world of knowledge and fun quizzes!</p>
+      <nav>
+        <a href="#about">Home</a>
+        <a href="#why">Why Play</a>
+        <a href="#triviaSection">Trivia</a>
+        <a href="#logoutContainer">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="login-section" id="authSection">
+      
+      <form id="loginForm">
+        <h2>Login</h2>
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" required />
+
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" required />
+
+        <button type="submit">Login</button>
+        <p id="loginMessage"></p>
+        <p class="toggle-link">Don't have an account?
+          <a href="#" id="showSignup">Sign up</a>
+        </p>
+      </form>
+
+     
+      <form id="signupForm" style="display:none">
+        <h2>Sign Up</h2>
+        <label for="signupUsername">Choose a Username</label>
+        <input type="text" id="signupUsername" required />
+
+        <label for="signupPassword">Choose a Password</label>
+        <input type="password" id="signupPassword" required />
+
+        <button type="submit">Create Account</button>
+        <p id="signupMessage"></p>
+        <p class="toggle-link">Already have an account?
+          <a href="#" id="showLogin">Login</a>
+        </p>
+      </form>
+    </section>
+  </main>
+
+ 
+  <div id="contentWrapper" style="display:none">
+    <main class="container">
+      <section class="content-section" id="about">
+        <h2>About This Portal</h2>
+        <p>Test your general knowledge with fun and challenging trivia questions.</p>
+      </section>
+
+      <section class="content-section" id="why">
+        <h2>Why Play Trivia?</h2>
+        <ul>
+          <li>Improve memory and cognitive skills</li>
+          <li>Learn new and interesting facts</li>
+          <li>Challenge yourself and your friends</li>
+        </ul>
+      </section>
+
+  
+      <section class="content-section" id="triviaSection" style="display:none">
+        <h2>Trivia Challenge</h2>
+        <div id="triviaContent" class="trivia-wrapper">Loading trivia questions…</div>
+      </section>
+
+      <div class="logout-container" id="logoutContainer">
+        <button onclick="logout()">Log Out</button>
+        <button id="deleteAccountBtn" class="delete-btn">Delete Account</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Trivia Portal. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="src/scripts.js"></script>
+</body>
+</html>
