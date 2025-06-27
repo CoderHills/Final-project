@@ -10,7 +10,7 @@ Fetches trivia questions from the Open Trivia DB
 
 Clean, responsive design with modern UI
 
-Fully separated HTML, CSS, and JavaScript for easy maintenance
+Fully separated HTML, CSS, and JavaScript for easy maintenances
 
 Navigation bar for easy section access
 
