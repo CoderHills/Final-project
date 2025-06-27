@@ -1,6 +1,0 @@
-{
-  "users": [
-    { "id": 1, "username": "User", "password": "Trivia" },
-    { "id": 2, "username": "Player", "password": "Game" }
-  ]
-}
