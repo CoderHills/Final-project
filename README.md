@@ -34,7 +34,6 @@ scripts.js README.md
 
  Dependencies
 
-Google Fonts: Inter
 
 Trivia API: Open Trivia DB
 
