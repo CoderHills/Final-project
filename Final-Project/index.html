@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1> Trivia Portal</h1>
+      <p>Welcome to a world of knowledge and fun quizzes!</p>
+      <nav>
+        <a href="#about">Home</a>
+        <a href="#why">Why Play</a>
+        <a href="#triviaSection">Trivia</a>
+        <a href="#logoutContainer">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container view active" id="authSection">
+    <div id="formsWrapper" class="forms-wrapper">
+      <form id="loginForm" class="login-section form-pane shown">
+        <h2>Login</h2>
+        <label for="loginUsername">Username</label>
+        <input id="loginUsername" required>
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" required>
+        <button type="submit">Login</button>
+        <p id="loginMessage"></p>
+        <p class="toggle-link">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+      </form>
+
+      <form id="signupForm" class="login-section form-pane">
+        <h2>Sign Up</h2>
+        <label for="signupUsername">Username</label>
+        <input id="signupUsername" required>
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" required>
+        <button type="submit">Create Account</button>
+        <p id="signupMessage"></p>
+        <p class="toggle-link">Already have an account? <a href="#" id="showLogin">Login</a></p>
+      </form>
+    </div>
+  </main>
+
+  <div id="contentWrapper" class="view hidden">
+    <main class="container">
+      <section class="content-section" id="about">
+        <h2>About This Portal</h2>
+        <p>Test your knowledge with fun and challenging trivia questions.</p>
+      </section>
+
+      <section class="content-section" id="why">
+        <h2>Why Play Trivia?</h2>
+        <p>Trivia is information and data that are considered to be of little value.
+
+Modern usage of the term trivia dates to the 1960s, when college students introduced question-and-answer contests to their universities. A board game, Trivial Pursuit, was released in 1982 in the same vein as these contests. Since the beginning of its modern usage, trivia contests have been established at various academic levels as well as casual venues such as bars and restaurants.
+
+Latin etymology
+The ancient Romans used the word triviae to describe where one road split or forked into two roads. Triviae was formed from tri (three) and viae (roads) – literally meaning "three roads", and in transferred use "a public place" and hence the meaning "commonplace."[1] The Latin adjective triviālis in Classical Latin besides its literal meaning could have the meaning "appropriate to the street corner, commonplace, vulgar." In late Latin, it could also simply mean "triple."
+
+In medieval Latin, the trivia (singular trivium) came to refer to the lower division of the Artes Liberales: grammar, rhetoric, and logic. These were the topics of basic education, and were foundational to the quadrivia of higher education: arithmetic, geometry, music, and astronomy.
+
+English usage
+The adjective trivial introduced into English in the 15th to 16th century was influenced by all three meanings of the Latin adjective:
+
+A 15th-century English translation of Ranulf Higden mentions the arte trivialle, referring to the trivium of the Liberal Arts.[2]
+The same work also calls a triuialle distinccion a threefold division. This is due to an application of the term by Arnobius, and was never common either in Latin or English.[3]
+The meaning "trite, commonplace, unimportant, slight" occurs from the late 16th century, notably in the works of Shakespeare.[4]
+Trivia was used as a title by Logan Pearsall Smith in 1902,[5] followed by More Trivia and All Trivia in 1921 and 1933, respectively, collections of short "moral pieces" or aphorisms. Book II of the 1902 publication is headed with a quote from "Gay's Trivia, or New Art of Walking Streets of London.",
+
+"Thou, Trivia, goddess, aid my song: Through spacious streets conduct thy bard along."[6]
+Modern usage
+Trivialities, Bits of Information of Little Consequence was the title of a popular book by British aphorist Logan Pearsall Smith (1865–1946), first published in 1902 but popularized in 1918 (with More Trivia following in 1921 and a collected edition including both in 1933). It consisted of short essays often tied to observation of small things and commonplace moments. Trivia is the plural of trivium, "a public place." The adjectival form of this, trivialis, was hence translated by Smith as "commonplace."[7]
+
+In the 1918 version of his book Trivia, Smith wrote:[7]
+
+I know too much; I have stuffed too many of the facts of History and Science into my intellectuals. My eyes have grown dim over books; believing in geological periods, cave dwellers, Chinese Dynasties, and the fixed stars has prematurely aged me.
+
+In the 1960s, nostalgic college students and others began to informally trade questions and answers about the popular culture of their youth. The first known documented labeling of this casual parlor game as "Trivia" was in a Columbia Daily Spectator column published on February 5, 1965.[8] The author, Ed Goodgold, then started the first organized "trivia contests" with the help of Dan Carlinsky. Ed and Dan wrote the book Trivia (Dell, 1966), which achieved a ranking on the New York Times best-seller list; the book was an extension of the pair's Columbia contests and was followed by other Goodgold and Carlinsky trivia titles. In their second book, More Trivial Trivia, the authors criticized practitioners who were "indiscriminate enough to confuse the flower of trivia with the weed of minutiae"; trivia, they wrote, "is concerned with tugging at heartstrings," while minutiae deals with such unevocative questions as "Which state is the largest consumer of Jell-O?" The board game Trivial Pursuit was released in 1982 and was a craze in the U.S. for several years thereafter.[7]
+
+Organized competition
+The largest current trivia contest[9][10] is held in Stevens Point, Wisconsin, at the University of Wisconsin–Stevens Point's college radio station WWSP 89.9 FM. This is a student-run community station with 30,000[11] watts of power and about a 65-mile (105-kilometre) radius, and the contest serves as a fundraiser for the station. The contest is open to anyone, and it is played in April of each year spanning 54 hours over a weekend with eight questions each hour. There are usually 400 teams ranging from 1 to 150 players. The top ten teams are awarded trophies. As of 2022, the contest is in its 52nd year.[12]
+
+The two longest continuous trivia contests in the world are the Great Midwest Trivia Contest at Lawrence University and the Williams Trivia Contest, which both debuted in the spring of 1966. Lawrence hosts its contest annually. Unusually, Williams has a separate contest for each semester, and thus its 84th game took place in May 2008.
+
+The University of Colorado Trivia Bowl was a mostly student contest featuring a single-elimination tournament based on the GE College Bowl.[13]
+
+Today, many bars and restaurants host weekly trivia nights in an effort to draw in more patrons, especially during weeknights.</p>
+        <ul>
+          <li>Improve memory and cognitive skills</li>
+          <li>Learn new and interesting facts</li>
+          <li>Challenge yourself and friends</li>
+        </ul>
+      </section>
+
+      <section class="content-section hidden" id="triviaSection">
+        <h2>Trivia Challenge</h2>
+        <div id="triviaContent" class="trivia-wrapper">Loading trivia…</div>
+      </section>
+
+      <div class="logout-container" id="logoutContainer">
+        <button onclick="logout()">Log Out</button>
+        <button id="deleteAccountBtn" class="delete-btn">Delete Account</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container"><p>&copy; 2025 Trivia Portal</p></div>
+    </footer>
+  </div>
+
+  <script src="src/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* ===== Vibrant Theme ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root{
+  --primary:#ff6b6b;
+  --primary-dark:#e34949;
+  --secondary:#ffd166;
+  --accent:#06d6a0;
+  --bg-gradient:linear-gradient(135deg,#f9d423 0%,#ff4e50 100%);
+  --surface:#ffffffee;
+  --text-dark:#2b2d42;
+  --text-light:#ffffff;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg-gradient);
+  min-height:100vh;
+  color:var(--text-dark);
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{width:90%;max-width:1000px;margin:auto;padding:2rem}
+a{text-decoration:none;color:inherit}
+
+/* Views */
+.view{opacity:0;transform:translateY(40px);pointer-events:none;transition:.5s ease}
+.view.active{opacity:1;transform:none;pointer-events:auto}
+.hidden{opacity:0!important;transform:translateY(40px)!important;pointer-events:none!important}
+
+/* Header */
+header{
+  backdrop-filter:blur(8px);
+  padding:3rem 1rem 1.5rem;
+  text-align:center;
+  border-bottom:2px solid rgba(255,255,255,.3);
+  color:var(--text-light);
+}
+header h1{font-size:3.2rem;font-weight:700}
+header p{font-size:1.25rem;margin-top:.75rem}
+
+/* Navbar */
+nav{
+  margin-top:2rem;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  flex-wrap:wrap
+}
+nav a{
+  font-weight:600;
+  padding:.55rem 1.35rem;
+  border-radius:10px;
+  background:rgba(255,255,255,.25);
+  color:var(--text-light);
+  transition:.25s
+}
+nav a:hover{background:rgba(255,255,255,.45);transform:translateY(-2px)}
+
+/* Forms Wrapper */
+.forms-wrapper{position:relative;height:480px;overflow:hidden}
+.form-pane{
+  position:absolute;top:0;left:0;width:100%;
+  opacity:0;transform:translateY(100%);
+  transition:.55s cubic-bezier(.25,.8,.25,1)
+}
+.form-pane.shown{opacity:1;transform:none}
+
+/* Auth Card */
+.login-section{
+  background:var(--surface);
+  padding:2.2rem;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,.2)
+}
+.login-section h2{text-align:center;margin-bottom:1rem;color:var(--primary)}
+.login-section label{display:block;margin-top:1rem;font-weight:600}
+.login-section input{
+  width:100%;padding:.8rem 1rem;margin-top:.4rem;
+  border:2px solid #e0e0e0;border-radius:12px;
+}
+.login-section input:focus{border-color:var(--primary);outline:none}
+.login-section button{
+  margin-top:2rem;width:100%;padding:.9rem;
+  background:var(--primary);color:var(--text-light);
+  border:none;border-radius:12px;font-weight:700;
+  transition:.3s;cursor:pointer
+}
+.login-section button:hover{background:var(--primary-dark);transform:translateY(-3px)}
+.toggle-link{margin-top:1rem;text-align:center;font-size:.9rem}
+.toggle-link a{color:var(--primary-dark)}
+.toggle-link a:hover{text-decoration:underline}
+
+/* Content Sections */
+.content-section{
+  margin-top:2rem;
+  background:var(--surface);
+  padding:2rem;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.2)
+}
+h2{font-size:2.1rem;margin-bottom:1rem;color:var(--primary-dark)}
+ul li{margin-bottom:.8rem;list-style:disc inside}
+
+/* Trivia Cards */
+.trivia-wrapper{display:grid;gap:1.5rem}
+.trivia-card{
+  background:var(--secondary);
+  border-radius:18px;
+  padding:1.8rem;
+  box-shadow:0 8px 25px rgba(0,0,0,.2);
+  transition:.25s
+}
+.trivia-card:hover{transform:translateY(-6px)}
+.trivia-card h3{margin-bottom:1rem;font-size:1.15rem;color:var(--text-dark)}
+.trivia-card ul{list-style:none}
+.trivia-card li{
+  margin:.6rem 0;padding:.75rem 1.1rem;
+  border-radius:12px;cursor:pointer;
+  background:rgba(255,255,255,.45);
+  transition:.2s
+}
+.trivia-card li:hover{background:rgba(255,255,255,.75)}
+.trivia-card li.correct{background:var(--accent)}
+.trivia-card li.wrong{background:var(--primary)}
+
+/* Buttons */
+.logout-container{text-align:center;margin:3rem 0}
+.logout-container button,.delete-btn{
+  background:var(--primary);color:#fff;border:none;
+  padding:.85rem 1.9rem;font-weight:700;
+  border-radius:14px;cursor:pointer;
+  transition:.25s,transform .15s
+}
+.logout-container button:hover{background:var(--primary-dark);transform:translateY(-2px)}
+.delete-btn{background:var(--accent);margin-left:1rem}
+.delete-btn:hover{background:#04b084;transform:translateY(-2px)}
+
+/* Footer */
+footer{
+  text-align:center;padding:2rem 1rem;background:rgba(255,255,255,.25);
+  color:var(--text-dark);margin-top:4rem;font-size:.9rem;border-top:2px solid rgba(255,255,255,.4)
+}
