@@ -18,17 +18,16 @@ Getting Started
 
 1. Clone or Download the Repository
 
-https://github.com/your-username/trivia-portal.git
+https://github.com/CoderHills/Final-project
 
 2. Project Structure
 
 trivia-portal/
-├── index.html
-├── css/
-│   └── styles.css
-├── src/
-│   └── scripts.js
-├── README.md
+index.html
+ css/
+styles.css
+src/
+scripts.js README.md
 
 3. Running the App
 
