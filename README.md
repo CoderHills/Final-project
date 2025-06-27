@@ -30,8 +30,7 @@ src/
 scripts.js README.md
 
 3. Running the App
-
-Simply open index.html in your browser. No server setup needed.
+4. open index.html in your browser.  A server set up is needed for the sign up and login
 
  Dependencies
 
@@ -49,7 +48,7 @@ To Do
 
 License
 
-This project is licensed under the MIT License. See the LICENSE file for more info.
+This project is licensed by Hillary
 
  Acknowledgments
 
